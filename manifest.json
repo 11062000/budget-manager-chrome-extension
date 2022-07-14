@@ -1,0 +1,31 @@
+{
+	"manifest_version": 2,
+	"name" : "Budget Manger",
+	"version": "1.0",
+	"author": "Akriti Shukla",
+	"description": "This extension tracks you overall spendings",
+
+	"icons": {
+		"128": "icon128.png",
+		"48": "icon64.png",
+		"16": "icon32.png"
+	},
+
+	"browser_action": {
+		"default_icon": "icon128.png",
+		"default_popup": "popup.html"
+	},
+
+	"options_page": "option.html",
+
+	"background": {
+		"scripts": ["eventPage.js"],
+		"persistent": false
+	},
+
+	"permissions": [
+		"storage",
+		"notifications",
+		"contextMenus"
+	]
+}
